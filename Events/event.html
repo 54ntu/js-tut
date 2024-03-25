@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-div{
+            height: 700px;
+            width: 500px;
+            display: block;
+        }
+        #div-1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+         #div-2{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div id="div-1">
+           
+        </div>
+         <div id="div-2">
+           
+        </div>
+
+    </div>
+    
+    //type,timestamp, defaultPrevented
+    //target, toElement,srcElement,currentTarget
+    //clientX,clientY, screenX screenY
+    //altkey,ctrlkey,shiftkey,keyCode
+    <script>
+        document.getElementById('div-1').addEventListener('click',(e)=>{
+            console.log('div -1 clicked')
+        },false)
+
+        //eventBubbling and eventCapturing
+        // if false or it is bydefault false which is eventBubbling
+        //bubbling in the sense event propagation pass from inner to outer 
+        //capturing in the sense event propagation pass from outer to inner and it is obtained by keeping third arguments of addEvenlistener "true"
+
+
+
+
+    </script>
+</body>
+</html>
