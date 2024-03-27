@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lexical & closure scoping</title>
+</head>
+<body style="background-color: #212121; text-align: center; margin-top: 50px;">
+        <button id="orange">orange</button>
+        <button id="green">Green</button>
+    
+</body>
+<script>
+    // document.getElementById('orange').onclick = function (){
+    //     // document.body.style.backgroundColor ='orange'
+    // }
+
+    // document.getElementById('green').onclick = function (){
+    //     // document.body.style.backgroundColor ='green'
+    // }
+
+
+    function outerFunc(color){
+        function innerFunc(){
+            document.body.style.backgroundColor = `${color}`
+        }
+        return innerFunc;  
+
+    }
+
+    //in the above code we are using the concept of closure scoping
+    // because of that we are able to use the variable of outer function into inner function simply by returning it
+    //though innerfunction lose its scope
+    
+
+
+    document.getElementById('orange').onclick= outerFunc('orange')
+    document.getElementById('green').onclick = outerFunc('green')
+</script>
+</html>
