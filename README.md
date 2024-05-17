@@ -81,3 +81,56 @@ let mycreatedDate = new Date(2024,0,23)
 console.log(mycreatedDate.toLocaleDateString());
 
 ```
+
+# Array
+```javascript
+//shallow copy - means share the same reference
+//deep copy - means donot share the same reference
+//important methods of Array
+1.push
+2. pop
+3.filter
+4.map
+5. forEach
+6.join
+7. slice
+8. reverse
+9. splice
+
+// join() converts array into string
+const arr= [0,1,2,3,4];
+const newArr = arr.join()
+console.log(newArr);
+console.log(typeof newArr);
+output -string
+output- 0,1,2,3,4
+```
+
+# difference between slice and splice
+# important points to know
+--> when we do slicing, range is not included and the original array remains same<br>
+-->when we do splicing, range is included and the original array is changed. Actually, the splice values are removed from the original arry
+
+```javascript
+ const arr= [0,1,2,3,4,5]
+console.log("original arr is :" ,arr)
+const arr1 = arr.slice(1,3);
+console.log('original array after slicing is : ", arr);
+console.log('arr1 values are : ", arr1);
+//lets do splice
+const arr2 = arr.splice(1,3);
+console.log('original arr is : ", arr);
+console.log( "arr2 values are : ",arr2);
+```
+# spread operator in js
+```javascript
+const arr1 = ['hello','hii','how'];
+const arr2 =['hummm','hehe','hu'];
+const newarr = [...arr1, ...arr2];
+console.log(newarr);
+```
+
+# Objects
+```javascript
+//singleton is nothing but 
+
