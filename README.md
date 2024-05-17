@@ -35,6 +35,49 @@ anotheruserdata.email="anotheruser@google.com"
 console.log(userdata);
 console.log(anotheruserdata);
 
+```
 
 
-  
+```javascript
+//use of precision in Number datatypes
+
+let num1 = 12.8934
+console.log(num1.toPrecision(3));
+output --12.9
+
+//if we change the value then
+let num1 = 112.8934
+console.log(num1.toPrecision(3));
+output-- 113
+```
+
+```javascript
+//Math in javascript
+console.log(Math.abs(-4));
+console.log(Math.random());
+console.log(((Math.random()*10) +1);
+
+
+const min = 10;
+const max = 20;
+
+console.log(Math.floor(Math.random()* (max-min +1)) +min);
+//in this case we will get the value between min and max value 
+
+```
+
+# date and time in js
+```javascript
+let mydate = new Date();
+console.log(mydate.toString());
+console.log(mydate.toDateString());
+console.log(mydate.toJSON());
+console.log(mydate.toLocaleDateString());
+console.log(typeof mydate);
+// here the type of mydate is object
+//its important to know its type for interview perspective
+
+let mycreatedDate = new Date(2024,0,23)
+console.log(mycreatedDate.toLocaleDateString());
+
+```
