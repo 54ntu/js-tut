@@ -148,8 +148,13 @@ console.log(newarr);
 ```
 
 ```javascript
+//rest operator and spread operator are same
 
-
+function calculateCartPrice(...num1){
+return num1
+}
+console.log(calculateCartPrice(200,300,400);
+output-[200,300,400]
 
    
 
