@@ -199,3 +199,42 @@ result2---undefined
 //now result1 willl be executed but
 // result1 is assigned with a function so that new execution context is created every time when the function is executed
 -->addNum () function will be executed for this new execution context i.e. memory phase and execution context are created
+
+
+```
+
+<h2>Call stack</h2>
+<hr>
+1. at first global execution context is created at the end of the stack<br>
+2. then function execution context is created just above the global execution context
+
+<h1>control flow in javascript</h1>
+
+<p>falsy values</p>
+1. false
+2. 0
+3.  -0
+4. BigInt
+5. 0n
+6. ""
+7.null
+8.undefined
+9.   NaN
+
+<h4>truthy values</h4>
+1. "o "
+2. 'false',
+3. ""
+4. [],
+5. {}
+6. function (){}
+
+
+
+<h2>Nullish coalescing operator (??): null undefined</h2>
+-->this nullish operator handle null value case
+
+
+
+
+
