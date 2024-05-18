@@ -131,6 +131,25 @@ console.log(newarr);
 ```
 
 # Objects
+1. There are two ways to create objects i.e. <h4> literals and constructor</h4>
+-->> when we create objects using constructor then the objects will be singleton<br>
+--->>> when we create objects using literal then it won't be singleton
+   ```javascript
+   //object literals
+   const JsUser ={
+   name:'santu',
+   age :18,
+   email:'santu@google.com'
+   
+   }
+
+   console.log(JsUser.email);
+   console.log(JsUser['email']);
+```
+
 ```javascript
-//singleton is nothing but 
+
+
+
+   
 
