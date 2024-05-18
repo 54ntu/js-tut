@@ -155,6 +155,47 @@ return num1
 }
 console.log(calculateCartPrice(200,300,400);
 output-[200,300,400]
+```
+<hr>
+# <h2 style="color:red">How does javascript execute code + call stack </h2>
+1. execution context
+2. call stack
 
-   
+<hr>
+1. javascript execution context--> it is nothing but how does execution of code handle in javascript
+a...first step - Global execution context is separated -- this value is 
+assigned in this Global execution context<br>
+b..functional execution context<br>
+c..Eval execution context
+different phases are :
+1. Memory creation phase<br>
+2. Execution phase
 
+
+```javascript
+
+let val1 = 10;
+let val2 = 5
+function addNum(num1,num2){
+let total = num1+ num2;
+return total;
+}
+let result1 = addNum(val1,val2);
+let result2 = addNum(10,2)
+
+//steps involve in execution of the JS code
+1.Global execution context-->>which is allocated to this
+2. memory creation phase-->>variables are gathered together and kept it
+val1----undefined<br>
+val2----undefined<br>
+addNum ---definition<br>
+result1--undefined
+result2---undefined
+
+3...execution phase:
+-->>val1---10
+-->val2--5
+//when we reach  addNum function then there is nothing to assign and previously it is assigned a memory then next line will be executed
+//now result1 willl be executed but
+// result1 is assigned with a function so that new execution context is created every time when the function is executed
+-->addNum () function will be executed for this new execution context i.e. memory phase and execution context are created
