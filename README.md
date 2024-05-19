@@ -1,4 +1,4 @@
-# Stack and Heap Memory in JS
+ # Stack and Heap Memory in JS
 
 *stack (used by primitive datatypes)<br>
 *Heap( Non-perimitive)
@@ -299,5 +299,10 @@ console.log(total_price);
 ```
 
 
+<hr>
+<h3>DOM in javascript</h3>
+<hr>
+
+```javascript
 
 
