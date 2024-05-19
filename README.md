@@ -234,6 +234,69 @@ result2---undefined
 <h2>Nullish coalescing operator (??): null undefined</h2>
 -->this nullish operator handle null value case
 
+<h5>for of loop</h5>
+<hr>
+
+```javascript
+
+const arr= [1,2,3,4,5]
+for (const num of arr){
+console.log(num)
+}
+//we can use this forof loop in object array and strings too
+
+const greetings = "hello world"
+for (const greet of greetings)
+{
+console.log(`Each char is ${greet})
+}
+
+# notes
+
+const arr=['a','b','c']
+for (let val1 in arr){
+console.log(arr[val1]);
+}
+
+//for of loop gives the value
+//for in loop gives the index value... but we can fetch the values by passing the key as i.e. arr[val1]
+
+//forEach () loop
+
+
+const coding= ["JS","Ruby","Java","python","CPP"]
+conding.forEach( function (val){
+console.log(val)
+}
+)
+
+```
+
+<hr>
+<h4>Reduce method</h4>
+<hr>
+
+```javascript
+const shoppingcart= [
+{
+itemname:'Mern courses'
+price:25000,
+},
+
+{
+itemname:'python course',
+price:10000,
+},
+{
+itemname:'react js',
+price:15000,
+}
+]
+
+const total_price= shoppingcart.reduce((acc, item)=>acc+item.price,0)
+
+console.log(total_price);
+```
 
 
 
